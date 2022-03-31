@@ -1,7 +1,7 @@
 import fibonacciAlgorithms from '../../src/algorithms/fibonacci';
 describe('Unit test suite for Fibonacci algorithm', () => {
     beforeEach(() => {
-        jest.resetAllMocks();
+        jest.restoreAllMocks();
     })
     test('Should execute fibonacci algorithm', () => {
         const fibonacciSpyOn = jest.spyOn(fibonacciAlgorithms, 'fibonacci');
